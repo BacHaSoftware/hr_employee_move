@@ -1,0 +1,199 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bh_hr_employee_move
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-28 07:53+0000\n"
+"PO-Revision-Date: 2022-07-28 07:53+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bh_hr_employee_move
+#: model:ir.model,name:bh_hr_employee_move.model_hr_contract
+msgid "Contract"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move__create_uid
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_intern_upgrade__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move__create_date
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_intern_upgrade__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move__date_transfer
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.department_move_search
+msgid "Date Transferred"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_intern_upgrade__date_upgrade
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.intern_upgrade_search
+msgid "Date Upgraded"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model,name:bh_hr_employee_move.model_hr_department
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_intern_upgrade__department
+msgid "Department"
+msgstr "Phòng/Ban"
+
+#. module: bh_hr_employee_move
+#: model:ir.actions.act_window,name:bh_hr_employee_move.department_move_act
+#: model:ir.ui.menu,name:bh_hr_employee_move.department_move_id
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.department_move_form
+msgid "Department Transfer"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.department_move_view
+msgid "Department Transfer Record"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move__display_name
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_intern_upgrade__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model,name:bh_hr_employee_move.model_hr_employee
+msgid "Employee"
+msgstr "Nhân viên"
+
+#. module: bh_hr_employee_move
+#: model:ir.model,name:bh_hr_employee_move.model_department_move
+msgid "Employee transfer departments"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move__employee_id
+msgid "Employees"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.department_move_search
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.intern_upgrade_search
+msgid "Group By"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move__id
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_intern_upgrade__id
+msgid "ID"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_intern_upgrade__intern_id
+msgid "Intern"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.transfer_intern_form
+msgid "Intern Upgraded"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.actions.act_window,name:bh_hr_employee_move.transfer_intern_act
+#: model:ir.ui.menu,name:bh_hr_employee_move.transfer_intern_id
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.transfer_intern_view
+msgid "Intern to Employee"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model,name:bh_hr_employee_move.model_intern_upgrade
+msgid "Intern upgrade to employee"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model,name:bh_hr_employee_move.model_hr_job
+msgid "Job Position"
+msgstr "Vị trí công việc"
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_hr_job__job_type
+msgid "Job Type"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move____last_update
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_intern_upgrade____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move__write_uid
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_intern_upgrade__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move__write_date
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_intern_upgrade__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model,name:bh_hr_employee_move.model_maintenance_equipment
+msgid "Maintenance Equipment"
+msgstr "Thiết bị bảo trì"
+
+#. module: bh_hr_employee_move
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.department_move_search
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.intern_upgrade_search
+msgid "Name"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move__new_department
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.department_move_search
+msgid "New Department"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_department_move__old_department
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.department_move_search
+msgid "Old Department"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.department_move_search
+msgid "Search Department"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model_terms:ir.ui.view,arch_db:bh_hr_employee_move.intern_upgrade_search
+msgid "Search Intern"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields,field_description:bh_hr_employee_move.field_hr_department__employee_at_date
+msgid "Số lượng nhân viên tại ngày"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields.selection,name:bh_hr_employee_move.selection__hr_job__job_type__intern
+msgid "TTS"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.ui.menu,name:bh_hr_employee_move.employee_move
+msgid "Transfer Record"
+msgstr ""
+
+#. module: bh_hr_employee_move
+#: model:ir.model.fields.selection,name:bh_hr_employee_move.selection__hr_job__job_type__non_intern
+msgid "Vị trí khác"
+msgstr ""

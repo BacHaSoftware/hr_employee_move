@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="transfer_intern_act" model="ir.actions.act_window">
+        <field name="name">Intern to Employee</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">intern.upgrade</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="transfer_intern_view" model="ir.ui.view">
+        <field name="name">transfer.intern.view</field>
+        <field name="model">intern.upgrade</field>
+        <field name="arch" type="xml">
+                <tree string="Intern to Employee" create="false">
+                    <field name="intern_id"/>
+                    <field name="department"/>
+                    <field name="date_upgrade"/>
+
+                </tree>
+        </field>
+    </record>
+
+    <record id="transfer_intern_form" model="ir.ui.view">
+        <field name="name">transfer.intern.form</field>
+        <field name="model">intern.upgrade</field>
+        <field name="arch" type="xml">
+            <form string="Intern Upgraded" create="false" edit="false">
+                <group>
+                    <field name="intern_id"/>
+                    <field name="date_upgrade"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="intern_upgrade_search" model="ir.ui.view">
+            <field name="name">intern.upgrade.search</field>
+            <field name="model">intern.upgrade</field>
+            <field name="arch" type="xml">
+                <search string="Search Intern">
+                    <field name="intern_id" filter_domain="[('intern_id','ilike',self)]"
+                           string="Name"/>
+                    <separator/>
+                    <group expand="0" string="Group By">
+                        <filter string="Date Upgraded" name="group_by_date_upgrade" context="{'group_by': 'date_upgrade'}"/>
+
+                    </group>
+                </search>
+            </field>
+    </record>
+
+
+    <menuitem id="transfer_intern_id"
+              name="Intern to Employee"
+              parent="employee_move"
+              action="transfer_intern_act"
+              groups="hr.group_hr_manager"
+              sequence="2"/>
+</odoo>
