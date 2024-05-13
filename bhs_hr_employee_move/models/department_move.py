@@ -48,6 +48,13 @@ class HrEmployeeInherit(models.Model):
         if self.job_id and self.job_id.job_type == 'intern':
             self.employee_type = "trainee"
 
+    @api.onchange('department_id')
+    def _onchange_department(self):
+        if self.department_id:
+            self.coach_id = self.department_id.manager_id
+            if self.department_id.manager_id.user_id:
+                self.leave_manager_id = self.department_id.manager_id.user_id
+
 
 # class HrApplicantInherit(models.Model):
 #     _inherit = 'hr.applicant'
