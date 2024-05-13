@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-28 07:53+0000\n"
-"PO-Revision-Date: 2022-07-28 07:53+0000\n"
+"POT-Creation-Date: 2022-07-28 07:52+0000\n"
+"PO-Revision-Date: 2022-07-28 07:52+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr ""
 #: model:ir.model,name:bhs_hr_employee_move.model_hr_department
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_intern_upgrade__department
 msgid "Department"
-msgstr "Phòng/Ban"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.actions.act_window,name:bhs_hr_employee_move.department_move_act
@@ -71,7 +71,7 @@ msgstr ""
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_hr_employee
 msgid "Employee"
-msgstr "Nhân viên"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_department_move
@@ -120,7 +120,7 @@ msgstr ""
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_hr_job
 msgid "Job Position"
-msgstr "Vị trí công việc"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_hr_job__job_type
@@ -148,7 +148,7 @@ msgstr ""
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_maintenance_equipment
 msgid "Maintenance Equipment"
-msgstr "Thiết bị bảo trì"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.department_move_search
