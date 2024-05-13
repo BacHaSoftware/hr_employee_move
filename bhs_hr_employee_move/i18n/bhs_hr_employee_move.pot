@@ -18,76 +18,76 @@ msgstr ""
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_hr_contract
 msgid "Contract"
-msgstr "Hợp đồng nhân viên"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move__create_uid
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_intern_upgrade__create_uid
 msgid "Created by"
-msgstr "Được tạo bởi"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move__create_date
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_intern_upgrade__create_date
 msgid "Created on"
-msgstr "Được tạo vào"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move__date_transfer
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.department_move_search
 msgid "Date Transferred"
-msgstr "Ngày luân chuyển"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_intern_upgrade__date_upgrade
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.intern_upgrade_search
 msgid "Date Upgraded"
-msgstr "Ngày nâng cấp"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_hr_department
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_intern_upgrade__department
 msgid "Department"
-msgstr "Phòng/Ban"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.actions.act_window,name:bhs_hr_employee_move.department_move_act
 #: model:ir.ui.menu,name:bhs_hr_employee_move.department_move_id
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.department_move_form
 msgid "Department Transfer"
-msgstr "Chuyển Bộ phận làm việc"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.department_move_view
 msgid "Department Transfer Record"
-msgstr "Bản ghi Chuyển Bộ phận làm việc"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move__display_name
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_intern_upgrade__display_name
 msgid "Display Name"
-msgstr "Tên hiển thị"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_hr_employee
 msgid "Employee"
-msgstr "Nhân viên"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_department_move
 msgid "Employee transfer departments"
-msgstr "Bộ phận luân chuyển nhân viên"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move__employee_id
 msgid "Employees"
-msgstr "Nhân viên"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.department_move_search
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.intern_upgrade_search
 msgid "Group By"
-msgstr "Nhóm theo"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move__id
@@ -98,85 +98,85 @@ msgstr ""
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_intern_upgrade__intern_id
 msgid "Intern"
-msgstr "Thực tập sinh"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.transfer_intern_form
 msgid "Intern Upgraded"
-msgstr "Nâng cấp thực tập sinh"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.actions.act_window,name:bhs_hr_employee_move.transfer_intern_act
 #: model:ir.ui.menu,name:bhs_hr_employee_move.transfer_intern_id
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.transfer_intern_view
 msgid "Intern to Employee"
-msgstr "Thực tập sinh chuyển thành nhân viên"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_intern_upgrade
 msgid "Intern upgrade to employee"
-msgstr "Thực tập sinh nâng lên chính thức"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_hr_job
 msgid "Job Position"
-msgstr "Chức vụ"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_hr_job__job_type
 msgid "Job Type"
-msgstr "Loại công việc"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move____last_update
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_intern_upgrade____last_update
 msgid "Last Modified on"
-msgstr "Chỉnh sửa lần cuối vào"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move__write_uid
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_intern_upgrade__write_uid
 msgid "Last Updated by"
-msgstr "Cập nhật lần cuối bởi"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move__write_date
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_intern_upgrade__write_date
 msgid "Last Updated on"
-msgstr "Cập nhật lần cuối vào"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model,name:bhs_hr_employee_move.model_maintenance_equipment
 msgid "Maintenance Equipment"
-msgstr "Thiết bị bảo trì"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.department_move_search
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.intern_upgrade_search
 msgid "Name"
-msgstr "Tên"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move__new_department
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.department_move_search
 msgid "New Department"
-msgstr "Phòng/Ban mới"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_department_move__old_department
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.department_move_search
 msgid "Old Department"
-msgstr "Phòng/Ban cũ"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.department_move_search
 msgid "Search Department"
-msgstr "Tìm kiếm Phòng/ban"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model_terms:ir.ui.view,arch_db:bhs_hr_employee_move.intern_upgrade_search
 msgid "Search Intern"
-msgstr "Tìm kiếm thực tập sinh"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields,field_description:bhs_hr_employee_move.field_hr_department__employee_at_date
@@ -191,7 +191,7 @@ msgstr ""
 #. module: bhs_hr_employee_move
 #: model:ir.ui.menu,name:bhs_hr_employee_move.employee_move
 msgid "Transfer Record"
-msgstr "Bản ghi chuyển đổi"
+msgstr ""
 
 #. module: bhs_hr_employee_move
 #: model:ir.model.fields.selection,name:bhs_hr_employee_move.selection__hr_job__job_type__non_intern
