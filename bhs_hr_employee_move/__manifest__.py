@@ -19,7 +19,7 @@
         'views/transfer_intern_view.xml'
 
     ],
-    'images': ['static/description/banner.gif'],
+    'images': ['static/description/banner.png'],
     'installable': True,
     'auto_install': False,
     'application': False,
