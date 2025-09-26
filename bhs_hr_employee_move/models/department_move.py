@@ -29,18 +29,40 @@ class HrEmployeeInherit(models.Model):
     def write(self, vals):
         dept_vals_lst = []
         intern_up_lst = []
+
         for record in self:
-            if record.department_id.id != vals.get('department_id') \
-                    and (vals.get('department_id') and record.department_id.id) and record.employee_type != 'trainee':
-                dept_move_vals = {'employee_id': record.id, 'old_department': record.department_id.id,
-                                  'new_department': vals.get('department_id'), 'date_transfer': date.today()}
-                dept_vals_lst.append(dept_move_vals)
-            if record.employee_type == 'trainee' and vals.get('employee_type') == 'employee':
-                intern_up_vals = {'intern_id': record.id, 'date_upgrade': date.today(),
-                                  'department': record.department_id.id}
-                intern_up_lst.append(intern_up_vals)
-        self.env['department.move'].create(dept_vals_lst)
-        self.env['intern.upgrade'].create(intern_up_lst)
+            # if vals.get('department_id'):
+            #     if record.department_id.id != vals.get('department_id') \
+            #             and (vals.get('department_id') and record.department_id.id) and record.employee_type != 'trainee':
+            #         dept_move_vals = {'employee_id': record.id, 'old_department': record.department_id.id,
+            #                           'new_department': vals.get('department_id'), 'date_transfer': date.today()}
+            #         dept_vals_lst.append(dept_move_vals)
+            #     if record.employee_type == 'trainee' and vals.get('employee_type') == 'employee':
+            #         intern_up_vals = {'intern_id': record.id, 'date_upgrade': date.today(),
+            #                           'department': record.department_id.id}
+            #         intern_up_lst.append(intern_up_vals)
+            if vals.get('department_id') and record.department_id:
+                if record.department_id.id != vals.get('department_id'):
+                    dept_move_vals = {'employee_id': record.id,
+                                      'old_department': record.department_id.id,
+                                      'new_department': vals.get('department_id'),
+                                      'date_transfer': date.today()}
+                    dept_vals_lst.append(dept_move_vals)
+            if vals.get('job_id') and record.job_id:
+                if record.job_id.id != vals.get('job_id'):
+                    new_job = self.env['hr.job'].browse(vals.get('job_id'))
+                    if record.job_id.job_type == 'intern' and new_job.job_type != 'intern':
+                        vals['employee_type'] = 'employee'
+                        intern_up_vals = {'intern_id': record.id,
+                                          'date_upgrade': date.today(),
+                                          'department': vals.get('department_id') if vals.get('department_id') else record.department_id.id}
+                        intern_up_lst.append(intern_up_vals)
+
+        if len(dept_vals_lst) > 0:
+            self.env['department.move'].create(dept_vals_lst)
+        if len(intern_up_lst) > 0:
+            self.env['intern.upgrade'].create(intern_up_lst)
+
         return super(HrEmployeeInherit, self).write(vals)
 
     @api.onchange('job_id')
@@ -85,13 +107,13 @@ class HrEmployeeInherit(models.Model):
 class HrJobInherit(models.Model):
     _inherit = 'hr.job'
 
-    job_type = fields.Selection([('intern', 'TTS'), ('non_intern', 'Vị trí khác')])
+    job_type = fields.Selection([('intern', 'Intern'), ('non_intern', 'Non intern')])
 
 
 class HrDepartment(models.Model):
     _inherit = 'hr.department'
 
-    employee_at_date = fields.Integer('Số lượng nhân viên tại ngày', compute="_compute_total_emp_at_date")
+    employee_at_date = fields.Integer('Number of employees at date', compute="_compute_total_emp_at_date")
 
     def _compute_total_emp_at_date(self):
         filter_date = self.env.context.get('filter_date')

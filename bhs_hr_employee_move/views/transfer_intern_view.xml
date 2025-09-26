@@ -5,19 +5,18 @@
         <field name="name">Intern to Employee</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">intern.upgrade</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <record id="transfer_intern_view" model="ir.ui.view">
         <field name="name">transfer.intern.view</field>
         <field name="model">intern.upgrade</field>
         <field name="arch" type="xml">
-                <tree string="Intern to Employee" create="false">
-                    <field name="intern_id"/>
-                    <field name="department"/>
-                    <field name="date_upgrade"/>
-
-                </tree>
+            <list string="Intern to Employee" create="false">
+                <field name="intern_id"/>
+                <field name="department"/>
+                <field name="date_upgrade"/>
+            </list>
         </field>
     </record>
 
