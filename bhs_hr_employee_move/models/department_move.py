@@ -31,16 +31,6 @@ class HrEmployeeInherit(models.Model):
         intern_up_lst = []
 
         for record in self:
-            # if vals.get('department_id'):
-            #     if record.department_id.id != vals.get('department_id') \
-            #             and (vals.get('department_id') and record.department_id.id) and record.employee_type != 'trainee':
-            #         dept_move_vals = {'employee_id': record.id, 'old_department': record.department_id.id,
-            #                           'new_department': vals.get('department_id'), 'date_transfer': date.today()}
-            #         dept_vals_lst.append(dept_move_vals)
-            #     if record.employee_type == 'trainee' and vals.get('employee_type') == 'employee':
-            #         intern_up_vals = {'intern_id': record.id, 'date_upgrade': date.today(),
-            #                           'department': record.department_id.id}
-            #         intern_up_lst.append(intern_up_vals)
             if vals.get('department_id') and record.department_id:
                 if record.department_id.id != vals.get('department_id'):
                     dept_move_vals = {'employee_id': record.id,
@@ -76,32 +66,6 @@ class HrEmployeeInherit(models.Model):
             self.coach_id = self.department_id.manager_id
             if self.department_id.manager_id.user_id:
                 self.leave_manager_id = self.department_id.manager_id.user_id
-
-
-# class HrApplicantInherit(models.Model):
-#     _inherit = 'hr.applicant'
-#
-#     def write(self, vals):
-#         trainee_lst = []
-#         for record in self:
-#             if record.stage_id == record.env.ref('hr_recruitment.stage_job4') \
-#                     and vals.get('stage_id') == record.env.ref('hr_recruitment.stage_job5').id:
-#                 emp_id = record.emp_id
-#                 if not emp_id:
-#                     action = record.create_employee_from_applicant()
-#                     emp_vals = {key.replace("default_", ""): value for key, value in action['context'].items() if
-#                                 key.startswith("default_")}
-#                     emp_id = self.env['hr.employee'].create(emp_vals)
-#                 # trainee_vals = {'intern_id': emp_id.id, 'date_upgrade': date.today()}
-#                 # trainee_lst.append(trainee_vals)
-#                 if record.job_id.job_type == 'intern':
-#                     trainee_vals = {'intern_id': emp_id.id, 'date_upgrade': date.today(),
-#                                     'department': emp_id.department_id.id}
-#                     trainee_lst.append(trainee_vals)
-#
-#         self.env['intern.upgrade'].create(trainee_lst)
-#
-#         return super(HrApplicantInherit, self).write(vals)
 
 
 class HrJobInherit(models.Model):
@@ -155,13 +119,3 @@ class MaintenanceEquipment(models.Model):
                 equipment.employee_id = equipment.employee_id
                 equipment.department_id = equipment.employee_id.department_id
         return res
-
-
-class Contract(models.Model):
-    _inherit = 'hr.contract'
-
-    @api.depends('employee_id', 'employee_id.department_id')
-    def _compute_employee_contract(self):
-        return super(Contract, self)._compute_employee_contract()
-
-

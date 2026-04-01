@@ -47,7 +47,7 @@
         <field name="model">hr.job</field>
         <field name="inherit_id" ref="hr.view_hr_job_form"/>
         <field name="arch" type="xml">
-                <xpath expr="//group[@name='recruitment']" position="inside">
+                <xpath expr="//group[@name='job']" position="inside">
                     <field name="job_type"/>
                 </xpath>
         </field>
@@ -68,7 +68,7 @@
                     <field name="new_department" filter_domain="[('new_department', 'ilike', self)]"
                            string="New Department"/>
                     <separator/>
-                    <group expand="0" string="Group By">
+                    <group>
                         <filter string="Old Department" name="group_by_old_department" context="{'group_by': 'old_department'}"/>
                         <filter string="New Department" name="group_by_new_department" context="{'group_by': 'new_department'}"/>
                         <filter string="Date Transferred" name="group_by_date_transfer" context="{'group_by': 'date_transfer'}"/>

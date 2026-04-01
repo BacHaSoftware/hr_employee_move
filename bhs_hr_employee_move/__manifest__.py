@@ -12,7 +12,7 @@
     'company': 'Bac Ha Software',
     'website': 'https://bachasoftware.com',
     'maintainer': 'Bac Ha Software',
-    'depends': ['hr', 'hr_recruitment', 'hr_holidays', 'hr_maintenance','hr_contract'],
+    'depends': ['hr', 'hr_recruitment', 'hr_holidays', 'hr_maintenance'],
     'data': [
         'security/ir.model.access.csv',
         'views/department_move_view.xml',

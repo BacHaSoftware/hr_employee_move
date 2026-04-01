@@ -41,7 +41,7 @@
                     <field name="intern_id" filter_domain="[('intern_id','ilike',self)]"
                            string="Name"/>
                     <separator/>
-                    <group expand="0" string="Group By">
+                    <group>
                         <filter string="Date Upgraded" name="group_by_date_upgrade" context="{'group_by': 'date_upgrade'}"/>
 
                     </group>
