@@ -46,7 +46,7 @@
   <a href="https://github.com/BacHaSoftware/hr_employee_move">
     <img src="/bhs_hr_employee_move/static/description/imgs/screen/dept_trans.png" alt="Setting">
   </a>
-<div align="center">Employee transfer</div>
+<div align="center">Employee Transfer Management</div>
 </div>
 
 
