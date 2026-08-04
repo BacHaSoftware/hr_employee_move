@@ -8,7 +8,7 @@
     <img src="/bhs_hr_employee_move/static/description/icon.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Employees Transfer Management</h3>
+  <h3 align="center">Employee Transfer Management</h3>
 
   <p align="center">
     A product of Bac Ha Software allows to Streamline and track employee transfers seamlessly, ensuring smooth transitions and efficient workforce allocation.
@@ -46,7 +46,7 @@
   <a href="https://github.com/BacHaSoftware/hr_employee_move">
     <img src="/bhs_hr_employee_move/static/description/imgs/screen/dept_trans.png" alt="Setting">
   </a>
-<div align="center">Employee transfer</div>
+<div align="center">Employee Transfer Management</div>
 </div>
 
 
