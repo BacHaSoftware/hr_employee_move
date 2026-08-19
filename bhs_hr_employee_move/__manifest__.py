@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Employees Transfer Management',
+    'name': 'Employee Transfer Management',
     'version': '1.0',
     'category': 'Generic Modules/Human Resources',
     'summary': """
