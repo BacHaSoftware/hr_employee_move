@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Employees Transfer Record',
+    'name': 'Employee Transfer Management',
     'version': '15.0.1.0.0',
     'category': 'Generic Modules/Human Resources',
     'description': """
@@ -18,7 +18,7 @@
         'views/transfer_intern_view.xml'
 
     ],
-    'images': ['static/description/banner.gif'],
+    'images': ['static/description/banner.png'],
     'installable': True,
     'auto_install': False,
     'application': False,
